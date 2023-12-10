@@ -2,9 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const { connectDB } = require("../src/config/db");
+const { connectDB } = require("../config/db");
 
-const productRoute = require("../src/routers/productsRouter");
+const productRoute = require("../routers/productsRouter");
 
 const app = express();
 
