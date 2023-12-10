@@ -5,7 +5,7 @@ const { dev } = require(".");
 exports.connectDB = async () => {
   try {
     await mongoose.connect(
-      dev.db.MONGODB_URI || 'mongodb+srv://RahafAlsaeed:Rahaf12345@cluster0.dhetf0m.mongodb.net/test?retryWrites=true&w=majority'
+      dev.db.MONGODB_URI
     );
     console.log("database is connected");
   } catch (error) {
